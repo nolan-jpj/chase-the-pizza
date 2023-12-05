@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=":st)JD.eDOEK_G6gnee8">Player</variable><variable type="KIND_SpriteKind" id="Z^@1lBOkkK*B!V)g7AhR">Projectile</variable><variable type="KIND_SpriteKind" id="kkk+01SBmX|r)$yLN/RV">Food</variable><variable type="KIND_SpriteKind" id="QtG.O{ih4A}1*;5RSx/1">Enemy</variable><variable id="i~=q1[?Go_s7`bm[#a,y">mySprite</variable><variable id="I-}ft1vMUTgG_vxiRX_n">pizza</variable><variable id="kd{_tI%Hc_@(.ULCfQ$|">bacon</variable></variables><block type="pxt-on-start" id="6o08`9CY^r/[FC=,utH1" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="5Si$t6X|/iR[uOxJ[lH%"><value name="color"><shadow type="colorindexpicker" id="VGci{l(S1@M4Y-[`pi[Q"><field name="index">13</field></shadow></value><next><block type="variables_set" id="6/kZ.}%+m0:,t5DLLY]s"><field name="VAR" id="i~=q1[?Go_s7`bm[#a,y">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="D!~q(cr1/OirBVm-~IMG"><value name="img"><shadow type="screen_image_picker" id="g2$^c[s#a;`XpZIT3Y4+"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 3 . . . 3 . . . . . . . 
+. . . . 3 . . . 3 . . . . . . . 
+. . . . 3 3 3 3 3 . . . . . . . 
+. . . . 3 f 3 f 3 . . . . . . . 
+. . . . 3 3 3 3 3 . . . . . . . 
+. . . . 3 f f f 3 . . . . . . . 
+. . . 3 . 3 3 3 . 3 . . . . . . 
+. . . . 3 3 e 3 3 . . . . . . . 
+. . . . . 3 e 3 . . . . . . . . 
+. . . . . 3 e 3 . . . . . . . . 
+. . . . . 3 . 3 . . . . . . . . 
+. . . . . 3 . 3 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"g2$^c[s#a;`XpZIT3Y4+"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="G$|Im;-a=s3l#czVqtYY"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="Vv=w9,n44RF}4~*%tLzr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="wUr7d1_(ri+ylu,-WOo,"><field name="VAR" id="i~=q1[?Go_s7`bm[#a,y">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="(*eeiaBC)53$/j^PwsBe"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="f4T,((*{ep+EeXMwsA}Z"><field name="speed">100</field></shadow></value><next><block type="variables_set" id="ci}uRQ8R^|+@)zrg}/s/"><field name="VAR" id="kd{_tI%Hc_@(.ULCfQ$|">bacon</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="QOR7B;x1(w-Qv|02JT@["><value name="img"><shadow type="screen_image_picker" id="mfCP{71+-HaQLCs!B}Dk"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 4 . 4 . 4 . 4 . . . . . . . 
+. . e 4 e 4 e 4 e . . . . . . . 
+. . 4 e 4 e 4 e 4 . . . . . . . 
+. . . 4 . 4 . 4 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"mfCP{71+-HaQLCs!B}Dk"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="y?*FXjfTG.7wa*MaF5l?"><field name="MEMBER">Food</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="+i}x6-N/e,%!(dv6~haY" x="3" y="314"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="OBNIKHLP[Z`u}~rx}F$J"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="9L~9l0V}iyd/-:t/Xj9!"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="ka$ru7QI#[SH-|THYB7N"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="+~c0%(#vu-^RP{yt|3cm"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy" id="uP4q(KRQyWyIESnW}GP$"><value name="value"><shadow type="math_number" id="s_s!TiCQke?lJB)1DmE#"><field name="NUM">1</field></shadow></value><next><block type="spritesetpos" id="p(4_g~ul|gUR7|wV@}F2"><value name="sprite"><block type="variables_get" id="f@dsdigHprHuBnrys*=."><field name="VAR" id="i~=q1[?Go_s7`bm[#a,y">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><value name="index"><shadow type="math_number" colour="#FFFFFF"><field name="NUM">0</field><mutation customfield="{&quot;decompileLiterals&quot;:&quot;true&quot;}"></mutation></shadow></value></shadow><block type="device_random" id="feSL/ggp,}~Mmp^36}F|"><value name="min"><shadow type="math_number" id=",kw53BIp?SU/R*FR+(_e"><field name="NUM">0</field></shadow></value><value name="limit"><block type="scenescreenwidth" id="RO@yIx]fxrV3j|a::u$p"></block></value></block></value><value name="y"><shadow type="positionPicker"><value name="index"><shadow type="math_number" colour="#FFFFFF"><field name="NUM">0</field><mutation customfield="{&quot;decompileLiterals&quot;:&quot;true&quot;}"></mutation></shadow></value></shadow><block type="device_random" id="U}N^AK:iPI`kg*T2BwCp"><value name="min"><shadow type="math_number" id="[|vF*iPv;mYp2V@/[l~T"><field name="NUM">0</field></shadow></value><value name="limit"><block type="scenescreenheight" id="}8t1B19p0nhS;saRg]i*"></block></value></block></value><next><block type="gamecountdown" id="dKN^-M:h(q-]_6Da`l2%"><value name="duration"><shadow type="math_number" id="mjzct+5%G%`I;BlY#qv)"><field name="NUM">3</field></shadow></value></block></next></block></next></block></statement></block></xml>
